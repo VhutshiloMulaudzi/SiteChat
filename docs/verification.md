@@ -6,4 +6,4 @@ A real POST to `/api/chat` with a permitted local Origin returned HTTP 200 and a
 
 A direct-and-transitive NuGet vulnerability scan and a full pnpm audit, including development dependencies, reported no known vulnerable packages at that time. The widget has no production Node dependencies. Dependency scans are time-specific observations, not a guarantee of security.
 
-The CI workflow restores .NET and development-only DOM-test lockfiles, checks JavaScript syntax, builds Release with warnings treated as errors, runs the suites and uploads TRX results. Run outcomes are visible in GitHub Actions once the repository is transferred.
+The CI example in `docs/github-actions-ci.yml.example` restores .NET and development-only DOM-test lockfiles, checks JavaScript syntax, builds Release with warnings treated as errors, runs the suites and uploads TRX results. The GitHub handoff connection does not have workflows permission, so this is delivered as a non-executing example. A repository owner with the appropriate permissions can copy it to `.github/workflows/ci.yml` to enable GitHub Actions. No successful GitHub CI run is claimed.

@@ -101,6 +101,10 @@ pnpm test
 
 Backend tests cover validation, origin enforcement, preflight, HTTP errors, provider response parsing, system-prompt ownership and credential isolation. DOM-based widget tests cover script-host endpoint resolution, lifecycle, safe text rendering, pending-state duplicate prevention, retry, history bounds and inline mode. DOM emulation is not a claim of exhaustive cross-browser compatibility.
 
+## Optional CI
+
+`docs/github-actions-ci.yml.example` contains a ready-to-use GitHub Actions build-and-test workflow. The repository handoff connection does not have workflows permission, so the example is not active. A repository owner with the appropriate permissions can copy it to `.github/workflows/ci.yml` to enable CI. The local tests are verified; no GitHub CI run is claimed.
+
 ## Deploy
 
 ```sh
