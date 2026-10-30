@@ -1,0 +1,10 @@
+{
+  "name": "sitechat-widget-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Development-only DOM contract tests for the dependency-free SiteChat widget",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=22.22.2" },
+  "scripts": { "test": "node --test tests/widget/*.test.mjs", "check": "node --check server/SiteChat.Api/wwwroot/widget/sitechat.js && node --check server/SiteChat.Api/wwwroot/playground.js" },
+  "devDependencies": { "jsdom": "30.1.3" }
+}
